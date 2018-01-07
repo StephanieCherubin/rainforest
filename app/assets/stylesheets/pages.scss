@@ -1,17 +1,11 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 html, body {
        margin: 0;
-       background-color: black;
      }
 
      h1, h2, a {
        font-family: 'Roboto','Oswald', sans-serif;
        text-transform: uppercase;
      }
-
-
 
      .sub-heading2, h4{
        font-family: 'Montserrat','Garamond', sans-serif;
@@ -28,28 +22,33 @@ html, body {
 
      p {
        font-family: Helvetica, Arial, sans-serif;
-       text-align: center;
+     }
+
+     .container {
+       max-width: 1240px;
+       margin: 0 auto;
+
      }
 
      /* Main */
      .main {
-       // text-align: center;
-       background: url(https://pbs.twimg.com/media/DC-_EYTUIAANMZs.jpg)  center center;
+       text-align: center;
+       background: url(https://pbs.twimg.com/media/DC-_EYTUIAANMZs.jpg) no-repeat center center;
        background-size: cover;
-       height: 1000px;
+       height: 1010px;
 
      }
 
-     // .main .container {
-     //   position: relative;
-     //   top: 100px;
-     // }
+     .main .container {
+       position: relative;
+       top: 100px;
+     }
 
      .header h1 {
        color: #fff;
        margin: 0;
-       font-size: 50px;
-       padding-top: 70px;
+       font-size: 150px;
+       padding-top: 100px;
        text-align: left;
 
      }
@@ -175,7 +174,7 @@ html, body {
      }
 
      .feature .container {
-       // position: relative;
+       position: relative;
        top: 200px;
      }
 
@@ -236,7 +235,7 @@ html, body {
 
      @media (min-width:600px) {
        .main h1 {
-         font-size: 50px;
+         font-size: 200px;
        }
 
        .supporting .col {
