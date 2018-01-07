@@ -24,7 +24,7 @@ box-sizing:border-box;
 -moz-box-sizing:border-box;
 }
 body {
-background: url(//subtlepatterns.com/patterns/scribble_light.png);
+background-color: rgb(46, 64, 82);
 font-family: Calluna, Arial, sans-serif;
 min-height: 1000px;
 }
