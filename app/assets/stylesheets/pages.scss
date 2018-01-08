@@ -101,6 +101,8 @@ html, body {
        float: left;
        width: 28%;
        padding: 10px 10px 10px 10px;
+       padding-left: 100px;
+
      }
 
      .supporting h2 {
@@ -111,6 +113,9 @@ html, body {
 
      .clearfix {
        clear: both;
+     }
+     .supporting h2 {
+       text-align: center;
      }
 
      .supporting p {
@@ -202,10 +207,9 @@ html, body {
        display: inline-block;
        border-radius: 5px;
      }
-
      /* Footer */
      .footer {
-       background: url(https://adxmedia.com/articles/wp-content/uploads/2011/04/iStock_000012205768Large.jpg);
+       background: url(https://i.ytimg.com/vi/3KOpBAHsEwM/maxresdefault.jpg);
        background-size: cover;
        height: 600px;
        text-align: center;
@@ -269,3 +273,6 @@ html, body {
        transform: rotate(180deg) scaleX(-1);
        background: red;
      }
+
+  // slideshow
+  
