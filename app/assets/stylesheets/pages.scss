@@ -96,12 +96,15 @@ html, body {
        margin-bottom: 10px;
      }
 
+      .col-row{
+      width: 100%;
 
+    }
      .supporting .col {
        float: left;
-       width: 28%;
+       width: 33%;
        padding: 10px 10px 10px 10px;
-       padding-left: 100px;
+       // padding-left: 100px;
 
      }
 
@@ -209,7 +212,7 @@ html, body {
      }
      /* Footer */
      .footer {
-       background: url(https://i.ytimg.com/vi/3KOpBAHsEwM/maxresdefault.jpg);
+       background: url(http://bfiercefitness.net/wp-content/uploads/2017/04/Slider-1.1.png);
        background-size: cover;
        height: 600px;
        text-align: center;
@@ -248,13 +251,16 @@ html, body {
        }
 
        .supporting .col {
-         width: 30%;
+         width: 33%;
+         height: 350px;
        }
 
        .supporting h2 {
          font-size: 40px;
        }
-
+       .supporting .col .heading {
+         height: 40px;
+       }
        .supporting p {
          font-size: 14px;
        }
@@ -275,4 +281,3 @@ html, body {
      }
 
   // slideshow
-  
