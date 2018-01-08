@@ -26,6 +26,34 @@ background-color: rgb(46, 64, 82);
 font-family: Calluna, Arial, sans-serif;
 min-height: 1000px;
 }
+
+/* this is the style for MORE */
+
+.description {
+	color: aqua;
+	margin-left: 45%;
+
+}
+
+.descriptiontext {
+	text-align: center;
+	margin: 0 30%  0 30% ;
+}
+
+.productname {
+	color: gray;
+	font-size: 300%;
+}
+
+.review{
+	
+}
+
+.a{
+	background-color: white;
+
+}
+
 #wrap{
 width: 90%;
 max-width: 1100px;
