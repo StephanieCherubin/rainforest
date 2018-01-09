@@ -25,6 +25,8 @@ span.left {
 ul{
   list-style-type: none;
   float: right;
+  padding: 0px;
+  margin: 0px;
 }
 
 li{
@@ -120,7 +122,7 @@ box-sizing:border-box;
 -moz-box-sizing:border-box;
 } */
 body {
-background-color: rgb(46, 64, 82);
+background-color: rgb(0, 0, 0);
 font-family: Calluna, Arial, sans-serif;
 min-height: 1000px;
 }
@@ -128,10 +130,9 @@ min-height: 1000px;
 /* this is the style for MORE */
 
 
-.reviewt {
+.review {
 	color: aqua;
 	text-align: center;
-
 }
 .description {
 	color: aqua;
@@ -151,7 +152,6 @@ min-height: 1000px;
 }
 
 .review{
-<<<<<<< HEAD
 	margin-left: 5%;
 
 	color: grey;
@@ -160,9 +160,6 @@ min-height: 1000px;
 
 .fecha{
 	color: black;
-=======
-
->>>>>>> 71c719e87a363bd83a2877c8719d55ae2d5dcebb
 }
 
 .icon{
@@ -171,10 +168,11 @@ min-height: 1000px;
 
 }
 
-
-
-
-
+h6{
+  color: white;
+  font-size: 20px;
+  font-family: Calluna, Arial, sans-serif;
+}
 #wrap{
 width: 90%;
 max-width: 1100px;
@@ -246,6 +244,8 @@ div#columns figure img {
 width: 100%;
 border-bottom: 1px solid #ccc;
 padding-bottom: 15px;
+position: relative;
+top: 0px;
 margin-bottom: 5px;
 }
 
