@@ -1,14 +1,16 @@
 <p id="notice"><%= notice %></p>
+<br>
 <p class = "productname">
 
 <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=koPOXO3_-_M&name=Good+Vibes+Radio+MUSIC+LIVE+STREAM+24+7+Best+Electronic+Future+Bass+Dance+Pop" target="_blank" frameborder="0" allowfullscreen></iframe>  <!-- <strong>Name:</strong> -->
   <%= @product.name %>
 </p>
 
-<header class= "descrptions">
+
   <img class = icon><%= image_tag "icon2.jpg"%></img>
-</header>
+
 <br>
+
   <strong class = "description" >Description</strong><br>
   <p class = "descriptiontext"><%= @product.description %><p>
 
@@ -16,29 +18,43 @@
 
 
 <h3 class = "reviewt">Reviews</h3>
-<div class = "review">
+<div class= "box-comments">
 <% @product.reviews.each do |review| %>
-  <p>
+<div class="container">
+  <div class="dialogbox">
+    <div class="body">
+      <span class="tip tip-up"></span>
+      <div class="message">
+        <span><%= review.comment %></span>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<!-- <div class = "review">
+<% @product.reviews.each do |review| %>
+  <p >
     <p class = "review"><%= review.comment %></p>
     <br>
       <p class "fecha"> Added on: <%= review.created_at %></p>
   </p>
-<% end %>
+<% end %> -->
 
   <!-- <h3>New Review</h3>
 <%= render 'reviews/form' %> -->
 
 <!-- <%= link_to 'Edit', edit_product_path(@product) %> | -->
 
-
-<p>
+</div>
+<p class = "pricing">
 <strong>Price: $</strong>
 <%= @product.formatted_price %><br>
 
 </p>
-</div>
-<div style=" bottom: 5px;">
 
+<!-- <div style=" bottom: 5px;"> -->
+<div>
 <a class="button" href="/charges/new">Purchase</a><br>
 <%= link_to 'Back', products_path %>
 </div>
