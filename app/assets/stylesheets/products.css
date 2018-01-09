@@ -31,30 +31,51 @@ min-height: 1000px;
 
 /* this is the style for MORE */
 
+
+.reviewt {
+	color: aqua;
+	text-align: center;
+
+}
 .description {
 	color: aqua;
-	margin-left: 45%;
+	margin-left: 46%;
+	padding-top: 50px;
+
 
 }
 
 .descriptiontext {
 	text-align: center;
-	margin: 0 30%  0 30% ;
+	margin: 0% 30%  0 30% ;
 }
 
 .productname {
 	color: gray;
-	font-size: 300%;
+	font-size: 400%;
+	text-align: center;
 }
 
 .review{
-	
-}
+	margin-left: 5%;
 
-.a{
-	background-color: white;
+	color: grey;
 
 }
+
+.fecha{
+	color: black;
+}
+
+.icon{
+	padding-left: 41%;
+
+
+}
+
+
+
+
 
 #wrap{
 width: 90%;
