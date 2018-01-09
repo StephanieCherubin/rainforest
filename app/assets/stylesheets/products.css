@@ -3,7 +3,14 @@
   They will automatically be included in application.css.
 	This css applies for /charges, /charges/new and /products as well.
 */
+/* body {
+  overscroll-behavior-y: none;
+} */
 
+body
+{
+    padding-top: 40px;
+}
 /* Navigation Bar */
 header, a, img, li{
   transition: all 1s;
@@ -21,7 +28,6 @@ span.left {
   font-size: 44px;
 }
 
-
 ul{
   list-style-type: none;
   float: right;
@@ -32,34 +38,15 @@ li{
   float: left;
 }
 
-img.logo{
-  float: left;
-}
 
 
 nav{
   width: 960px;
   margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+
 }
-
-section.stretch{
-  float: left;
-  height: 1500px;
-  width: 100%;
-}
-
-  section.stretch p{
-    font-size: 30px;
-    color: #969696;
-    text-align: center;
-    position: relative;
-    margin-top: 250px;
-  }
-
-  section.stretch p.bottom{
-    top: 100%;
-  }
-
 
 header{
   float: left;
