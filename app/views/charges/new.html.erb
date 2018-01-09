@@ -1,6 +1,7 @@
 <%= form_tag charges_path do %>
 <div class="center">
-  <h1>Purchase</h1>
+  <h5>Purchase</h5>
+  <hr>
   <article>
     <% if flash[:error].present? %>
       <div id="error_explanation">
@@ -8,7 +9,7 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $25.00</span>
+      <div>Amount: $25.00</div>
     </label>
   </article>
 <br>

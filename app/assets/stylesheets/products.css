@@ -3,14 +3,8 @@
   They will automatically be included in application.css.
 	This css applies for /charges, /charges/new and /products as well.
 */
-/* body {
-  overscroll-behavior-y: none;
-} */
 
-body
-{
-    padding-top: 40px;
-}
+
 /* Navigation Bar */
 header, a, img, li{
   transition: all 1s;
@@ -22,7 +16,7 @@ header, a, img, li{
 /* Basic layout */
 span.left {
   float: left;
-  display: block;
+  display: inline;
   width: 25%;
   padding-left: 10px;
   font-size: 44px;
@@ -38,16 +32,6 @@ li{
   float: left;
 }
 
-
-
-nav{
-  width: 960px;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 40px;
-
-}
-
 header{
   float: left;
   width: 100%;
@@ -60,7 +44,7 @@ header{
     text-decoration: none;
   }
 
-  header a.active, header a:hover{
+  header a:hover{
     color: #3d3d3d;
   }
 
@@ -100,9 +84,20 @@ header{
   }
 
 /* Main */
-body {
-  font-family: Calluna, Arial, sans-serif;
-  min-height: 1000px;
+
+.center {
+  margin: 0 auto;
+  width: 60%;
+  border: 1px solid white;
+  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,0.7), 0 .25rem .25rem rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 60px 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(0, 170, 255);
+  transform: translate(-50%, -50%);
+
 }
 h1	{
 color: gray;
@@ -113,10 +108,17 @@ margin-bottom: 1px;
 text-align: center;
 font-size: 100px;
 }
-*{
+h5{
+  text-align:center;
+  font-size: 50px;
+  font-family: 'Montserrat','Garamond', sans-serif;
+  text-transform: uppercase;
+  color: #eee;
+}
+/* *{
 box-sizing:border-box;
 -moz-box-sizing:border-box;
-}
+} */
 body {
 background-color: rgb(46, 64, 82);
 font-family: Calluna, Arial, sans-serif;
@@ -135,8 +137,6 @@ min-height: 1000px;
 	color: aqua;
 	margin-left: 46%;
 	padding-top: 50px;
-
-
 }
 
 .descriptiontext {

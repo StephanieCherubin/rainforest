@@ -13,6 +13,8 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready{
+
 $(document).on("scroll",function(){
   if($(document).scrollTop()>100){
     $("header").removeClass("large").addClass("small");
@@ -21,3 +23,4 @@ $(document).on("scroll",function(){
     $("header").removeClass("small").addClass("large");
     }
   });
+}

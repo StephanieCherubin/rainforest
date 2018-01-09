@@ -15,33 +15,31 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
-  <header class="large">
-  		<span class="left">
-  			<a href="#">FLEX MIAMI</a>
-  		</span>
+  <body>
+
+    <header class="large">
   		<nav>
+        <span class="left">
+          <a href="/">FLEX MIAMI</a>
+        </span>
+
   			<ul>
-  				<li><a class="active" href="/">Home</a></li>
-  				<li><a href="#">Classes</a></li>
-  				<li><a href="#">Studio</a></li>
-  				<li><a href="/signup">Login</a></li>
-  				<li><button type="button" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
-          </button></li>
+          <% if current_user %>
+            <strong>Welcome,<strong> <%= current_user.name %> !   | <%= link_to 'Log Out', '/logout' %>   |
+          <% else %>
+            <%= link_to 'Log In', '/login'%>    | <%= link_to 'Sign Up', '/signup' %>     |
+          <% end %>
+          <%= link_to 'Home', '/' %>  |
+          <%= link_to 'Classes', '/products' %>     |
+          <%= link_to 'Studio', '/products' %>     |
+          <%= link_to '<button type="button">Shopping Cart</button>'.html_safe, products_path %>
   			</ul>
   		</nav>
   	</header>
+    <main>
+      <%= yield %>
+    </main>
 
 
-  <body>
-    <div>
-      <% if current_user %>
-      Welcome <%= current_user.name %> | <%= link_to 'Log Out', 'logout' %>
-      <% else %>
-      <%= link_to 'Log In', '/login'%> | <%= link_to 'Sign Up', '/signup' %>
-
-      <% end %>
-    </div>
-    <%= yield %>
   </body>
 </html>
