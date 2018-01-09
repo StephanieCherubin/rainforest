@@ -1,5 +1,7 @@
 {
   "name": "rainforest",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "sweetalert": "^2.1.0"
+  }
 }
