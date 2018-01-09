@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Flex Miami</title>
+    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=koPOXO3_-_M&name=Good+Vibes+Radio+MUSIC+LIVE+STREAM+24+7+Best+Electronic+Future+Bass+Dance+Pop" target="_blank" frameborder="0" allowfullscreen></iframe>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -25,13 +26,13 @@
 
   			<ul>
           <% if current_user %>
-            <strong>Welcome,<strong> <%= current_user.name %> !   | <%= link_to 'Log Out', '/logout' %>   |
+            <h6><strong>Welcome,<strong> <%= current_user.name %> !&nbsp;&nbsp;|&nbsp;&nbsp;<%= link_to 'Log Out', '/logout' %>   |
           <% else %>
-            <%= link_to 'Log In', '/login'%>    | <%= link_to 'Sign Up', '/signup' %>     |
+            <%= link_to 'Log In', '/login'%>&nbsp;&nbsp;|&nbsp;&nbsp;<%= link_to 'Sign Up', '/signup' %> <h6>&nbsp;&nbsp;|
           <% end %>
-          <%= link_to 'Home', '/' %>  |
-          <%= link_to 'Classes', '/products' %>     |
-          <%= link_to 'Studio', '/products' %>     |
+          <%= link_to 'Home', '/' %>&nbsp;&nbsp;|
+          <%= link_to 'Classes', '/products' %>&nbsp;&nbsp;|
+          <%= link_to 'Studio', '/products' %>&nbsp;&nbsp;|&nbsp;&nbsp;
           <%= link_to '<button type="button">Shopping Cart</button>'.html_safe, products_path %>
   			</ul>
   		</nav>
