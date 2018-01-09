@@ -1,16 +1,124 @@
 /*
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
+	This css applies for /charges, /charges/new and /products as well.
 */
 
+/* Navigation Bar */
+header, a, img, li{
+  transition: all 1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 1s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
+}
+
+/* Basic layout */
+span.left {
+  float: left;
+  display: block;
+  width: 25%;
+  padding-left: 10px;
+  font-size: 44px;
+}
+
+
+ul{
+  list-style-type: none;
+  float: right;
+}
+
+li{
+  display: inline;
+  float: left;
+}
+
+img.logo{
+  float: left;
+}
+
+
+nav{
+  width: 960px;
+  margin: 0 auto;
+}
+
+section.stretch{
+  float: left;
+  height: 1500px;
+  width: 100%;
+}
+
+  section.stretch p{
+    font-size: 30px;
+    color: #969696;
+    text-align: center;
+    position: relative;
+    margin-top: 250px;
+  }
+
+  section.stretch p.bottom{
+    top: 100%;
+  }
+
+
+header{
+  float: left;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+  header a{
+    color: #969696;
+    text-decoration: none;
+  }
+
+  header a.active, header a:hover{
+    color: #3d3d3d;
+  }
+
+  header li{
+    margin-right: 30px;
+  }
+
+  /* Sizes for the bigger menu */
+  header.large{
+    height: 120px;
+  }
+
+  header.large img{
+    width: 489px;
+    height: 113px;
+  }
+
+  header.large li{
+    margin-top: 45px;
+
+  }
+
+
+  /* Sizes for the smaller menu */
+  header.small{
+    height: 50px;
+  }
+
+  header.small img{
+    width: 287px;
+    height: 69px;
+    margin-top: -10px;
+  }
+
+  header.small li{
+    margin-top: 17px;
+  }
+
+/* Main */
 body {
-	background-color: black;
   font-family: Calluna, Arial, sans-serif;
   min-height: 1000px;
 }
-
 h1	{
-color: #999999;
+color: gray;
 font-family: arial, sans-serif;
 font-weight: bold;
 margin-top: 0px;
@@ -18,7 +126,6 @@ margin-bottom: 1px;
 text-align: center;
 font-size: 100px;
 }
-
 *{
 box-sizing:border-box;
 -moz-box-sizing:border-box;
@@ -57,6 +164,7 @@ min-height: 1000px;
 }
 
 .review{
+<<<<<<< HEAD
 	margin-left: 5%;
 
 	color: grey;
@@ -65,6 +173,9 @@ min-height: 1000px;
 
 .fecha{
 	color: black;
+=======
+
+>>>>>>> 71c719e87a363bd83a2877c8719d55ae2d5dcebb
 }
 
 .icon{
@@ -81,6 +192,14 @@ min-height: 1000px;
 width: 90%;
 max-width: 1100px;
 margin: 50px auto;
+}
+.col-container {
+    display: table;
+    width: 100%;
+}
+.col {
+    display: table-cell;
+    padding: 16px;
 }
 .columns_2 figure{
  width:49%;
@@ -145,7 +264,6 @@ margin-bottom: 5px;
 
 div#columns figure figcaption {
 font-size: .9rem;
-color: #444;
 line-height: 1.5;
 height:60px;
 font-weight:600;
