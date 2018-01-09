@@ -5,30 +5,40 @@
   <%= @product.name %>
 </p>
 
-<div>
+<header class= "descrptions">
+  <img class = icon><%= image_tag "icon2.jpg"%></img>
+</header>
+<br>
   <strong class = "description" >Description</strong><br>
   <p class = "descriptiontext"><%= @product.description %><p>
-</div>
 
 
 
-<h3 class = "description">Reviews</h3>
+
+<h3 class = "reviewt">Reviews</h3>
+<div class = "review">
 <% @product.reviews.each do |review| %>
   <p>
     <p class = "review"><%= review.comment %></p>
     <br>
-    Added on: <%= review.created_at %>
+      <p class "fecha"> Added on: <%= review.created_at %></p>
   </p>
 <% end %>
 
-  <h3>New Review</h3>
-<%= render 'reviews/form' %>
+  <!-- <h3>New Review</h3>
+<%= render 'reviews/form' %> -->
 
 <!-- <%= link_to 'Edit', edit_product_path(@product) %> | -->
-<%= link_to 'Back', products_path %>
+
 
 <p>
 <strong>Price: $</strong>
-<%= @product.formatted_price %>
+<%= @product.formatted_price %><br>
+
 </p>
-<a class="button" href="/charges/new">Purchase</a>
+</div>
+<div style=" bottom: 5px;">
+
+<a class="button" href="/charges/new">Purchase</a><br>
+<%= link_to 'Back', products_path %>
+</div>
