@@ -10,8 +10,10 @@
   <img class = icon><%= image_tag "icon2.jpg"%></img>
 
 <br>
+<br>
 
   <strong class = "description" >Description</strong><br>
+  <br>
   <p class = "descriptiontext"><%= @product.description %><p>
 
 
@@ -24,8 +26,9 @@
   <div class="dialogbox">
     <div class="body">
       <span class="tip tip-up"></span>
-      <div class="message">
-        <span><%= review.comment %></span>
+      <div>
+        <span class="messages"><%= review.comment %></span>
+        <p class "fecha"> Added on: <%= review.created_at %></p>
       </div>
     </div>
   </div>
@@ -36,9 +39,9 @@
 <% @product.reviews.each do |review| %>
   <p >
     <p class = "review"><%= review.comment %></p>
-    <br>
-      <p class "fecha"> Added on: <%= review.created_at %></p>
-  </p>
+    <br> -->
+
+  <!-- </p>
 <% end %> -->
 
   <!-- <h3>New Review</h3>

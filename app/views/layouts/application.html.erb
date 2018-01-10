@@ -23,17 +23,18 @@
         <span class="left">
           <a href="/">FLEX MIAMI</a>
         </span>
-
+        <br>
   			<ul>
           <% if current_user %>
-            <h6><strong>Welcome,<strong> <%= current_user.name %> !&nbsp;&nbsp;|&nbsp;&nbsp;<%= link_to 'Log Out', '/logout' %>   |
+            <a>Welcome&nbsp;&nbsp;&nbsp;<%= current_user.name %> !</a>&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'Log Out', '/logout' %>
           <% else %>
-            <%= link_to 'Log In', '/login'%>&nbsp;&nbsp;|&nbsp;&nbsp;<%= link_to 'Sign Up', '/signup' %> <h6>&nbsp;&nbsp;|
+          <br>
+            <%= link_to 'Log In', '/login'%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'Sign Up', '/signup' %>&nbsp;&nbsp;
           <% end %>
-          <%= link_to 'Home', '/' %>&nbsp;&nbsp;|
-          <%= link_to 'Classes', '/products' %>&nbsp;&nbsp;|
-          <%= link_to 'Studio', '/products' %>&nbsp;&nbsp;|&nbsp;&nbsp;
-          <%= link_to '<button type="button">Shopping Cart</button>'.html_safe, products_path %>
+          &nbsp;&nbsp;<%= link_to 'Home', '/' %>&nbsp;&nbsp;
+          <%= link_to 'Classes', '/products' %>&nbsp;&nbsp;
+          <%= link_to 'Studios', '/products' %>&nbsp;&nbsp;&nbsp;&nbsp;
+
   			</ul>
   		</nav>
   	</header>
