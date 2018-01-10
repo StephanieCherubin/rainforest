@@ -3,10 +3,10 @@
 <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=koPOXO3_-_M&name=Good+Vibes+Radio+MUSIC+LIVE+STREAM+24+7+Best+Electronic+Future+Bass+Dance+Pop" target="_blank" frameborder="0" allowfullscreen></iframe>
 <hr>
   <%= form_for :user do |form| %>
-  NAME: <br><br><%= form.text_field :name %><br /><br />
-  EMAIL: <br><br><%= form.text_field :email %><br /><br />
-  PASSWORD: <br><br><%= form.password_field :password%><br /><br /><br>
-  PASSWORD CONFIRMATION: <br><br><%= form.password_field :password_confirmation %><br /><br /><br>
+  <a style="color:white;">NAME:</a> <br><br><%= form.text_field :name %><br /><br />
+  <a style="color:white;">EMAIL:</a>  <br><br><%= form.text_field :email %><br /><br />
+  <a style="color:white;"> PASSWORD:</a> br><br><%= form.password_field :password%><br /><br /><br>
+  <a style="color:white;">PASSWORD CONFIRMATION:</a> <br><br><%= form.password_field :password_confirmation %><br /><br /><br>
 
   <%= form.submit 'Sign Up' %>
   <% end %>
