@@ -42,37 +42,28 @@ header{
   background-color: black;
 
 }
-
   header a{
     color: #969696;
     text-decoration: none;
   }
-
   header a:hover{
     color: #3d3d3d;
   }
-
   header li{
     margin-right: 30px;
   }
-
   /* Sizes for the bigger menu */
   header.large{
     height: 10%;
     margin-top: -20px
   }
-
   header.large img{
     width: 489px;
     height: 113px;
   }
-
   header.large li{
     margin-top: 45px;
-
   }
-
-
   /* Sizes for the smaller menu */
   header.small{
     height: 50px;
@@ -102,7 +93,6 @@ header{
   left: 50%;
   /* background-color: rgb(0, 170, 255); */
   transform: translate(-50%, -50%);
-
 }
 h1	{
 color: gray;
